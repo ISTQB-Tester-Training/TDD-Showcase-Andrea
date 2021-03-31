@@ -1,5 +1,8 @@
 package tddshowcasepackage;
 
+import java.time.*;
+import java.time.temporal.ChronoUnit;
+
 public class TimePair {
 
     private String startTime = null;
@@ -18,6 +21,6 @@ public class TimePair {
     }
 
     public double getTimeDifference() {
-        return 1.0;
+        return LocalTime.parse(startTime).until(LocalTime.parse(endTime), ChronoUnit.MINUTES)/60.0;
     }
 }
