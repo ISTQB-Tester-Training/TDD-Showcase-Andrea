@@ -5,26 +5,9 @@ import java.time.temporal.ChronoUnit;
 
 public class TimePair {
 
-    private String startTime = null;
-    private String endTime = null;
-
     public TimePair() {}
 
-    public void setTimeValues (String strStartTime, String strEndTime) {
-        startTime = strStartTime;
-        endTime = strEndTime;
-    }
-
-    public double getTimeDifference(String strStartTime, String strEndTime) {
-        setTimeValues(strStartTime, strEndTime);
-        return getTimeDifference();
-    }
-
-    public double getTimeDifference() {
-
-        if (startTime == null || endTime == null) {
-            throw new TimePairException("Start oder End Time not set", 500);
-        }
+    public double getTimeDifference(String startTime, String endTime) {
 
         try { LocalTime.parse(startTime);
         }
