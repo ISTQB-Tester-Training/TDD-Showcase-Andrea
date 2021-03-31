@@ -1,4 +1,4 @@
-// Im Step 1 wird der zweite Test geschrieben. Das entpricht dem Schritt rot im Red-Green-Refactoring-Cycle.
+// Im Step 3 wird der zweite Test geschrieben. Das entpricht dem Schritt rot im Red-Green-Refactoring-Cycle.
 // Es wird die Zeitdifferenz für ein zweites Zeitpaar berechnet. Die Zeitdifferenz wird einfach als 0 Stunde angenommen.
 // Das ist praktisch ein Grenzwerttest.
 
