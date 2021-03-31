@@ -1,5 +1,7 @@
 package tddshowcasetestpackage;
 
+import tddshowcasepackage.*;
+
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -13,3 +15,4 @@ public class TimePairTest {
         assertEquals(1.0, aTimePair.getTimeDifference(), 0.0);
     }
 }
+
